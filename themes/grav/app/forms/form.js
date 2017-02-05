@@ -55,7 +55,7 @@ export default class Form {
             let fields = parent.find('.form-data');
             let inputs = fields.find('input, select, textarea, button');
 
-            label.add(fields).css('opacity', enabled ? '' : 0.7);
+            label.add(fields).css('color', enabled ? 'RGBA(119, 127, 132, 1.00)' : RGBA(119, 127, 132, 0.7));
             inputs.map((index, input) => {
                 let isSelectize = input.selectize;
                 input = $(input);
